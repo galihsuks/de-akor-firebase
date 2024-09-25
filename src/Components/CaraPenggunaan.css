@@ -1,0 +1,82 @@
+.cara-main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% - 60px);
+    height: calc(100vh - 60px);
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1;
+    padding: 30px;
+}
+.cara-main h1 {
+    margin-bottom: 20px;
+}
+.cara-main p {
+    margin-bottom: 20px;
+}
+.cara-main img {
+    margin-inline: 10px;
+}
+.cara-main .icon-inline {
+    display: inline;
+    margin-block: 0;
+    margin-inline: 10px;
+}
+
+.cara-guna {
+    max-width: 1025px;
+    margin-inline: auto;
+    height: calc(
+        100vh - 106px - 60px - 7px
+    ); /*full - header - paddingApp - marginLatihan*/
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    margin-top: 7px;
+    border: 1px solid white;
+    border-radius: 7px;
+    overflow-y: scroll;
+}
+.cara-guna > div {
+    width: 90%;
+    padding-block: 30px;
+}
+.cara-guna h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 40px;
+}
+.cara-guna h2 {
+    color: var(--hijau);
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 40px;
+}
+.cara-guna li,
+.cara-guna p {
+    margin-bottom: 15px;
+}
+.cara-guna img {
+    margin-inline: 10px;
+}
+.cara-guna .icon-inline {
+    display: inline;
+    margin-block: 0;
+    margin-inline: 10px;
+}
+
+@media (max-width: 900px) {
+    .cara-main {
+        overflow-y: scroll;
+        font-size: smaller;
+    }
+    .cara-guna {
+        height: calc(100vh - 72px - 14px);
+        margin-inline: 10px;
+    }
+    .cara-guna > div {
+        width: 80%;
+        padding-block: 30px;
+    }
+}

@@ -1,0 +1,53 @@
+.inputauth {
+    margin-bottom: 26px;
+}
+.inputauth label {
+    position: absolute;
+    color: white;
+    transform: translate(-310px, 8px);
+    pointer-events: none;
+    transition: 0.5s;
+    width: 200px;
+}
+.inputauth input {
+    background-color: rgba(0, 0, 0, 0);
+    border-width: 0 0 2px 0;
+    border-color: white;
+    height: 40px;
+    width: 300px;
+    color: white;
+    outline: none;
+    padding-inline: 10px;
+}
+.inputauth input:focus,
+.inputauth input:valid {
+    border-color: var(--hijau);
+    background-color: rgba(0, 0, 0, 0);
+}
+.inputauth input:focus ~ label,
+.inputauth input:valid ~ label {
+    color: var(--hijau);
+    font-weight: bold;
+    transform: translate(-310px, -12px);
+    font-size: 13px;
+    transition: 0.5s;
+}
+#masuk,
+#daftar {
+    height: calc(100vh - 60px - 106px);
+}
+@media (max-width: 900px) {
+    .inputauth {
+        margin-bottom: 20px;
+    }
+    .inputauth input {
+        width: 250px;
+    }
+    .inputauth label {
+        transform: translate(-260px, 8px);
+    }
+    .inputauth input:focus ~ label,
+    .inputauth input:valid ~ label {
+        transform: translate(-260px, -12px);
+    }
+}

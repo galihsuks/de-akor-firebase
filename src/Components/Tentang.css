@@ -1,0 +1,52 @@
+.tentang {
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 1025px;
+    margin-inline: auto;
+    height: calc(
+        100vh - 106px - 60px - 7px - 40px
+    ); /*full - header - paddingApp - marginLatihan - paddingTentang*/
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    margin-block: 7px;
+    overflow-y: scroll;
+}
+.tentang img {
+    max-width: 300px;
+    margin: auto;
+    margin-block: 10px;
+}
+.tentang section {
+    margin-bottom: 10px;
+}
+
+/* Style Tabel*/
+.tentang table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tentang td,
+th {
+    border: 1px solid var(--unguGelap);
+    text-align: left;
+    padding: 8px;
+}
+
+.tentang tr:nth-child(even) {
+    background-color: var(--unguCerah);
+}
+
+@media (max-width: 900px) {
+    .tentang {
+        height: calc(100vh - 72px - 14px - 40px);
+        margin-inline: 10px;
+        font-size: smaller;
+    }
+    .tentang img {
+        transform: scale(0.7);
+    }
+}

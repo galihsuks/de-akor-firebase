@@ -1,0 +1,202 @@
+.latihan {
+    max-width: 1025px;
+    margin-inline: auto;
+    height: calc(
+        100vh - 106px - 60px - 111px - 7px
+    ); /*full - header - paddingApp - pianodiv - marginLatihan*/
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    margin-block: 7px;
+}
+/* ======== container tmb sublatihan ========= */
+.latihan .bungkus-tmb-latihan {
+    overflow-x: scroll;
+    background: none;
+}
+.latihan .container-tmb-sublatihan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-block: 2px;
+}
+/* ======== isi ========= */
+.latihan .isi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+.latihan .kiri {
+    border: 1px solid white;
+    border-radius: 7px;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 98%; */
+}
+.latihan .kiri div {
+    padding: 60px;
+}
+.latihan .kanan {
+    width: 60%;
+    height: 100%;
+    margin-left: 20px;
+}
+.latihan .kanan .utama {
+    height: calc(100% - 63px);
+}
+.latihan .kanan .penghitung,
+.waktu {
+    font-weight: bold;
+}
+.latihan .kanan .border-barpenghitung {
+    border: 4px solid white;
+    border-radius: 50px;
+    width: 100%;
+    height: 30px;
+}
+.latihan .kanan .barpenghitung {
+    position: relative;
+    transform: translateY(-35px);
+    background-color: var(--hijau);
+    border-radius: 50px;
+    width: 0%;
+    height: 30px;
+}
+.latihan .dot {
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    border-radius: 50%;
+    display: block;
+    margin-inline: 7px;
+}
+.latihan .tmb-instruksi {
+    position: absolute;
+    transform: translate(15px, 60px);
+}
+.latihan .tmb-instruksi-noSub {
+    position: absolute;
+    transform: translate(15px, 16px);
+}
+
+/* ======== piano ======= */
+.piano-div {
+    overflow-x: scroll;
+}
+
+/*========= awal akhir =======*/
+.latihan-lulus,
+.latihan-instruksi {
+    max-width: 1025px;
+    margin-inline: auto;
+    height: calc(
+        100vh - 106px - 60px - 7px
+    ); /*full - header - paddingApp - marginLatihan*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 7px;
+    border: 1px solid white;
+    border-radius: 7px;
+}
+.latihan-lulus > div,
+.latihan-instruksi > div {
+    text-align: center;
+    width: 60%;
+    margin-inline: auto;
+}
+.latihan-lulus > div button,
+.latihan-instruksi > div button {
+    margin-inline: auto;
+}
+/*===== quiz ======*/
+.latihan.quiz {
+    max-width: 1025px;
+    margin-inline: auto;
+    height: calc(
+        100vh - 106px - 60px - 7px
+    ); /*full - header - paddingApp - marginLatihan*/
+}
+.latihan.quiz .kanan {
+    width: 70%;
+    height: 80%;
+    text-align: center;
+    margin: auto;
+}
+
+@media (max-width: 900px) {
+    .latihan-lulus,
+    .latihan-instruksi {
+        height: calc(100vh - 72px - 14px);
+        margin-inline: 10px;
+    }
+    .latihan-lulus > div,
+    .latihan-instruksi > div {
+        width: 80%;
+    }
+
+    .latihan-instruksi .overflow-y {
+        width: 100%;
+        overflow-y: scroll;
+        max-height: 340px;
+    }
+
+    .latihan {
+        height: calc(
+            100vh - 72px - 111px - 14px
+        ); /*full - header - piano - margin*/
+    }
+
+    .latihan .bungkus-tmb-latihan {
+        width: calc(100vw - 20px);
+        margin-inline: auto;
+    }
+    .latihan .container-tmb-sublatihan {
+        justify-content: normal;
+    }
+
+    .latihan .isi {
+        flex-direction: column;
+    }
+    .latihan .kiri {
+        width: calc(100vw - 20px);
+        height: fit-content;
+    }
+    .latihan .kiri div {
+        padding: 10px 20px;
+    }
+    .latihan .kiri h1,
+    .latihan .kiri p {
+        font-size: smaller;
+    }
+    .latihan .kanan {
+        margin: 0;
+        flex: 1;
+        width: calc(100vw - 40px);
+    }
+
+    .latihan .tmb-instruksi {
+        transform: translate(15px, 57px) scale(0.9);
+    }
+    .latihan .tmb-instruksi-noSub {
+        transform: translate(15px, 10px) scale(0.9);
+    }
+
+    .piano-div {
+        width: calc(100vw - 20px);
+        margin-inline: auto;
+    }
+
+    .space-instruksi {
+        display: block;
+        height: 35px;
+    }
+
+    .latihan.quiz {
+        height: calc(100vh - 72px - 14px);
+    }
+}

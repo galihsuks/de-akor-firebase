@@ -1,0 +1,38 @@
+.audioicon {
+    cursor: pointer;
+    transition: 0.1s;
+}
+.audioicon:hover {
+    transform: scale(1.1);
+    transition: 0.1s;
+}
+.audioicon.no-hover img {
+    height: 60px;
+}
+.audioicon.no-hover h1 {
+    font-size: 40px;
+    margin-left: -20px;
+}
+.audioicon.no-hover:hover {
+    transform: scale(1);
+}
+
+.audioicon img {
+    display: inline;
+    margin: 0;
+}
+.audioicon h1 {
+    display: inline;
+    font-size: 100px;
+    margin-left: -65px;
+}
+
+@media (max-width: 900px) {
+    .audioicon img {
+        height: 100px;
+    }
+    .audioicon h1 {
+        font-size: 70px;
+        margin-left: -35px;
+    }
+}

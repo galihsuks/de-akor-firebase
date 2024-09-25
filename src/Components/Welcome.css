@@ -1,0 +1,58 @@
+#welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#welcome > img {
+    display: none;
+}
+#welcome .kiri {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+#welcome .kanan {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+#welcome img {
+    transform: translate(-100px, 20px);
+}
+.hiasan-versi-hp {
+    display: none;
+}
+@media (max-width: 900px) {
+    #welcome {
+        flex-direction: column;
+        height: calc(100vh - 250px);
+    }
+    #welcome .kiri {
+        width: 80%;
+        display: block;
+    }
+    span {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+    }
+    #welcome .kanan {
+        display: none;
+    }
+    .hiasan-versi-hp {
+        position: relative;
+        display: block;
+        width: 100vw;
+        height: 36px;
+    }
+    #welcome .hiasan-versi-hp img {
+        position: absolute;
+        /* transform: translate(0px, -150px) scale(0.9) rotate(30deg); */
+        transform: translate(0px, -150px);
+        width: 100vw;
+    }
+}

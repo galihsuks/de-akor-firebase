@@ -1,0 +1,405 @@
+.App {
+    background: linear-gradient(235.93deg, #5e366a 17.18%, #331940 120.05%);
+    display: block;
+    padding: 30px;
+    height: calc(100vh - 60px);
+}
+
+@media (max-width: 900px) {
+    .App {
+        padding: 0;
+        height: 100vh;
+        width: 100vw;
+    }
+}
+
+.pemisah {
+    height: 20px;
+}
+
+select {
+    border-radius: 7px;
+    padding: 1px 5px;
+}
+
+.tmb-lonjong {
+    background: var(--hijau);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+    border-radius: 50px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px 20px;
+    transition: 0.2s;
+    margin: 3px;
+    cursor: pointer;
+}
+.tmb-lonjong:hover {
+    background: white;
+    color: var(--ungu);
+    transition: 0.2s;
+}
+.tmb-lonjong:hover {
+    background: white;
+    color: var(--ungu);
+    transition: 0.2s;
+}
+.tmb-lonjong.ungu {
+    background-color: var(--ungu);
+    border: 1px solid #ffffff;
+    transition: 0.2s;
+}
+.tmb-lonjong.ungu:hover {
+    background-color: white;
+    color: var(--ungu);
+    transition: 0.2s;
+}
+.tmb-lonjong:disabled {
+    background-color: var(--ungu);
+    color: rgb(131, 131, 131);
+}
+.panjang {
+    padding: 5px 55px;
+}
+
+.tmb-kotak-jwb {
+    background-color: var(--ungu);
+    /* border: 1px solid white; */
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.7);
+    border-radius: 7px;
+    color: white;
+    font-weight: bold;
+    padding: 5px 20px;
+    display: block;
+    width: 100px;
+    text-align: center;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.tmb-kotak-jwb:hover {
+    background: white;
+    color: var(--ungu);
+    transition: 0.2s;
+}
+
+.tmb-kotak {
+    background-color: var(--hijau);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+    border-radius: 7px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px 20px;
+    display: block;
+    width: 100%;
+    margin: 0 3px;
+    text-align: center;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.tmb-kotak:hover {
+    background: white;
+    color: var(--ungu);
+    transition: 0.2s;
+}
+.tmb-kotak.ungu,
+.tmb-langkah.ungu {
+    background-color: var(--ungu);
+    transition: 0.2s;
+    cursor: default;
+}
+.tmb-kotak.ungu:hover,
+.tmb-langkah.ungu:hover {
+    background-color: var(--ungu);
+    color: white;
+    transition: 0.2s;
+}
+
+.langkah {
+    width: 100%;
+}
+
+.tmb-langkah {
+    background-color: var(--hijau);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+    color: white;
+    text-decoration: none;
+    margin: 5px 0;
+    margin-right: 5px;
+    display: block;
+    border-radius: 7px;
+    padding: 15px 25px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.tmb-langkah i {
+    font-size: 30px;
+}
+.tmb-langkah span:hover {
+    color: var(--hijau);
+}
+.tmb-langkah:hover {
+    background-color: white;
+    color: var(--ungu);
+    transition: 0.2s;
+}
+
+#container-langkah {
+    height: 600px;
+    overflow-y: scroll;
+}
+@media (max-width: 900px) {
+    #container-langkah {
+        height: calc(100vh - 185px - 30px);
+        margin-inline: 10px;
+    }
+    #beranda-pengajar .tmb-langkah {
+        font-size: smaller;
+    }
+    .ditengahkan-kolom-hp {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+::-webkit-scrollbar-track {
+    background: var(--ungu);
+    border-radius: 7px;
+}
+::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 7px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--hijau);
+}
+
+.putih {
+    background-color: white;
+    color: var(--hijau);
+    transition: 0.2s;
+}
+.putih:hover {
+    background-color: var(--ungu);
+    color: white;
+    outline: 1px solid white;
+    transition: 0.2s;
+}
+.merah {
+    background-color: var(--merah);
+    width: 130px;
+    height: 30px;
+    margin-top: 20px;
+    padding: 0;
+}
+.merah .rekam-teks {
+    position: absolute;
+    display: flex;
+    width: 130px;
+    justify-content: center;
+}
+.merah .rekam-teks.no-absolute {
+    position: static;
+}
+.merah .rekam-teks p {
+    text-align: center;
+    line-height: 30px;
+}
+.merah .rekam-bar {
+    background-color: var(--merah);
+    border-radius: 7px;
+    width: 0%;
+    max-width: 100%;
+    height: 30px;
+}
+.merah:hover {
+    background-color: white;
+    color: var(--merah);
+}
+.merah.merekam {
+    background-color: var(--hijau);
+}
+.merah.merekam:hover {
+    color: white;
+}
+.rekam-banyak {
+    width: fit-content;
+}
+.rekam-soal-banyak {
+    display: flex;
+    gap: 10px;
+    width: fit-content;
+}
+.rekam-soal-banyak > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.rekam-soal-banyak > div > span {
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    border-radius: 50%;
+    display: block;
+}
+
+@media (max-width: 900px) {
+    .tmb-kotak:hover {
+        background-color: var(--hijau);
+        color: white;
+    }
+    .putih:hover {
+        background-color: white;
+        color: var(--hijau);
+        outline: 1px solid white;
+        transition: 0.2s;
+    }
+    .merah:hover {
+        background-color: var(--merah);
+    }
+    .merah.merekam:hover {
+        background-color: var(--hijau);
+        color: white;
+    }
+}
+
+.ditengahkan-baris {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ditengahkan-kolom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1px;
+}
+
+.body {
+    margin-top: 5px;
+    height: 600px;
+    width: 100%;
+}
+
+button {
+    border: none;
+    outline: none;
+    display: block;
+}
+
+.tekslink {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--hijau);
+}
+.tekslink:hover {
+    color: white;
+}
+
+/*PLACEHOLDER*/
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 0.5; /* Firefox */
+}
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: white;
+}
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: white;
+}
+
+.container-piano {
+    display: flex;
+    width: 1020px;
+    margin: auto;
+}
+.container-piano .piano-putih {
+    display: block;
+    background-color: white;
+    border: 2px solid var(--ungu);
+    border-radius: 5px;
+    width: 100%;
+    height: 100px;
+    color: var(--ungu);
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+.container-piano .piano-putih:hover {
+    background-color: var(--hijau);
+    color: white;
+}
+.container-piano .piano-putih span {
+    display: block;
+    width: 100%;
+    height: 70px;
+}
+.container-piano .piano-hitam {
+    display: block;
+    background-color: black;
+    border: 2px solid var(--ungu);
+    border-radius: 5px;
+    width: 50%;
+    height: 60px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: bold;
+    position: relative;
+    transform: translateX(-50%);
+    margin-right: -27px;
+}
+.container-piano .piano-hitam:hover {
+    background-color: var(--hijau);
+}
+.container-piano .piano-hitam span {
+    display: block;
+    width: 100%;
+    height: 10px;
+}
+
+.jwbnTeks {
+    text-align: center;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    padding-block: 3px;
+    text-transform: uppercase;
+}
+
+.list-siswa {
+    margin-bottom: 15px;
+    width: 80%;
+}
+.list-siswa h2 {
+    background-color: var(--hijau);
+    padding-left: 10px;
+    line-height: 42px;
+}
+.list-siswa p {
+    padding-left: 10px;
+}
+
+.sembunyikan {
+    display: none;
+}
+.eror {
+    text-align: center;
+    font-weight: bold;
+    border-radius: 7px;
+    color: var(--merah);
+}

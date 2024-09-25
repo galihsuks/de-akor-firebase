@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap");
+
+:root {
+    --hijau: #0cca98;
+    --merah: #e2125d;
+    --unguCerah: #5e366a;
+    --ungu: #462653;
+    --unguGelap: #331940;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: white;
+}
